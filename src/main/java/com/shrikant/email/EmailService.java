@@ -17,7 +17,7 @@ public class EmailService {
         SimpleMailMessage mail = new SimpleMailMessage();
         mail.setTo(email);
         mail.setSubject("Email Verification");
-        mail.setFrom("shrikantnavghare2001@gmail.com");
+        mail.setFrom("{your email address from where you have to send the mail}");
         mail.setText("To confirm your account, please click here: " +
            "http://localhost:8080/confirm?token="+token
         );
